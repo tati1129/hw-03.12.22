@@ -15,7 +15,7 @@ text_input.addEventListener('input', (event) => {
     // console.log(event.target.name);
 })
 
-btn.addEventListener('click', ()=>{
+btn.addEventListener('click', () => {
     text.value = '';
     localStorage.setItem('textIn', '')
 })
