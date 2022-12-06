@@ -8,15 +8,16 @@ const btn = document.querySelector('.btn_clear');
 
 
 text_input.value = localStorage.getItem('textIn');
+
+
 text_input.addEventListener('input', (event) => {
     const value = event.target.value;
     // console.log(event.target.value);
     localStorage.setItem('textIn', value);
-    // console.log(event.target.name);
 })
 
-btn.addEventListener('click', () => {
-    text.value = '';
+btn.addEventListener('click', ()=>{
+    text_input.value = '';
     localStorage.setItem('textIn', '')
 })
 
